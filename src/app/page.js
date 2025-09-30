@@ -622,9 +622,9 @@ I hope I can create something interesting and helpful for other people.`
             <div key={idx} className="relative group">
               <a
                 href={it.href}
-                className="flex items-center justify-center w-10 h-10 rounded-full text-gray-700 hover:bg-gray-100 transition-colors"
+                className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full text-gray-700 hover:bg-gray-100 transition-colors"
               >
-                <i className={`bx ${it.iconClass} text-xl`} />
+                <i className={`bx ${it.iconClass} text-xl sm:text-xl`} />
               </a>
               <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition pointer-events-none">
                 {it.label}
