@@ -20,7 +20,7 @@ const projects = [
     description:
       "Platform analisis website berbasis AI yang dapat memeriksa performa, SEO, dan keamanan website dengan laporan detail.",
     skills: ["React", "Python", "SQLlite", "Tailwind CSS", "Javascript"],
-    demoUrl: "#",
+    demoUrl: "#", 
     githubUrl: "#",
   },
   {
@@ -79,9 +79,9 @@ const certificates = [
 
 const stats = [
   { number: "4", label: "Projects Completed" },
-  { number: "1", label: "Years Experience" },
+  { number: "1", label: "Years Learning" },
   { number: "5+", label: "Technologies" },
-  { number: "70%", label: "Learning Progrest" },
+  { number: "70%", label: "Learning Progress" },
 ];
 
 const items = [
@@ -89,17 +89,17 @@ const items = [
   { href: "#about", label: "About Me", iconClass: "bx-book" },
   { separator: true },
   { href: "#projects", label: "Projects", iconClass: "bx-code" },
-  { href: "#certificates", label: "Certificates", iconClass: "bx-certification" },
+  { href: "#certificates", label: "Certificates", iconClass: "bx-award" },
   { separator: true },
-  { href: "https://github.com", label: "GitHub", iconClass: "bxl-github" },
-  { href: "https://instagram.com", label: "Instagram", iconClass: "bxl-instagram" },
-  { href: "https://tiktok.com", label: "TikTok", iconClass: "bxl-tiktok" },
+  { href: "https://github.com/joaolino14", label: "GitHub", iconClass: "bxl-github" },
+  { href: "https://instagram.com/joanocelino", label: "Instagram", iconClass: "bxl-instagram" },
+  { href: "https://www.tiktok.com/@linono237?is_from_webapp=1&sender_device=pc", label: "TikTok", iconClass: "bxl-tiktok" },
 ];
 
 const contact = [
-  { href: "#", label: "WhatsApp", iconClass: "bxl-whatsapp" },
-  { href: "mailto:joan@example.com", label: "Email", iconClass: "bx-envelope" },
-  { href: "https://linkedin.com", label: "LinkedIn", iconClass: "bxl-linkedin" },
+  { href: "https://wa.me/6283133662635", label: "WhatsApp", iconClass: "bxl-whatsapp" },
+  { href: "mailto:genetikacerdas@gmail.com", label: "Email", iconClass: "bx-envelope" },
+  { href: "https://linkedin.com/in/marcellino-jonathan-mage-teguh", label: "LinkedIn", iconClass: "bxl-linkedin" },
 ];
 
 
@@ -141,14 +141,14 @@ Then I moved to Figma and Next.js.
 
 I will learn again and again to improve my skills and understanding.
 I hope I can create something interesting and helpful for other people.`
-
+ 
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-gray-50 text-gray-800">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          <div className="text-xl font-bold">Joan.dev</div>
+          <div className="text-xl font-bold">Marcellino</div>
           <div className="hidden md:flex space-x-8">
             {items.filter(item => !item.separator && item.href.startsWith('#')).map((item, idx) => (
               <a key={idx} href={item.href} className="text-gray-600 hover:text-black transition-colors">
@@ -183,7 +183,8 @@ I hope I can create something interesting and helpful for other people.`
 
             <div className="mt-8 flex flex-wrap gap-4">
               <a 
-                href="#" 
+                href="/CV.pdf"
+                download="Joan Marcelino - CV.pdf" 
                 className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center gap-2"
               >
                 <i className="bx bx-download"></i>
@@ -274,8 +275,14 @@ I hope I can create something interesting and helpful for other people.`
           <div className="space-y-6">
             <div className="flex flex-col md:flex-row md:items-center justify-between p-6 bg-white rounded-xl shadow-sm border border-gray-100">
               <div className="flex items-center gap-4 mb-4 md:mb-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">
-                  SK
+                <div>
+                  <Image 
+                  src={"/images/school.png"}
+                  alt="SMK"
+                  width={40}
+                  height={40}
+                  className="object-cover rounded-full"
+                  />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">SMK Ketintang</h3>
@@ -299,8 +306,14 @@ I hope I can create something interesting and helpful for other people.`
 
             <div className="flex flex-col md:flex-row md:items-center justify-between p-6 bg-white rounded-xl shadow-sm border border-gray-100">
               <div className="flex items-center gap-4 mb-4 md:mb-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold">
-                  CP
+                <div>
+                  <Image 
+                  src={"/images/politan.jpg"}
+                  alt="Code Politan"
+                  width={40}
+                  height={40}
+                  className="object-cover rounded-full"
+                  />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">Code Politan</h3>
@@ -367,10 +380,11 @@ I hope I can create something interesting and helpful for other people.`
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
               I've worked on a variety of projects, from simple websites to complex
               web applications. Here are a few of my favorites that showcase my skills and creativity.
+              (Note: Some projects are still in development and will be updated soon.)
             </p>
           </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8
 ">
       {projects.map((project) => (
         <div
@@ -400,7 +414,7 @@ I hope I can create something interesting and helpful for other people.`
           </div>
 
           {/* Bagian Link */}
-          <div className="px-5 py-4 flex justify-between border-t border-gray-200 dark:border-gray-700">
+          <div className="px-5 py-4 flex justify-between border-t border-gray-200">
             <a
               href={project.demoUrl}
               className="text-sm font-medium hover:text-blue-700 bg-black text-white px-3 py-1 rounded-lg"
@@ -429,9 +443,9 @@ I hope I can create something interesting and helpful for other people.`
             </span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold">My Certifications</h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              "I have earned several certifications from my studies at Codepolitan and other platforms. 
+              I have earned several certifications from my studies at Codepolitan and other platforms. 
               I made them to learn and practice web development (at the moment I have 4, but it will increase, 
-              because I focus more on practice than theory)."
+              because I focus more on practice than theory).
             </p>
           </div>
 
@@ -458,7 +472,9 @@ I hope I can create something interesting and helpful for other people.`
           <span className="text-xs text-gray-500">Completed 2024</span>
           <a
             href="#"
-            className="text-blue-500 hover:text-blue-700 text-sm font-medium"
+            className="px-4 py-2 text-gray-600 rounded cursor-not-allowed opacity-70"
+            
+            onClick={(e) => e.preventDefault()}
           >
             View Certificate
           </a>
@@ -477,8 +493,8 @@ I hope I can create something interesting and helpful for other people.`
             </span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold">Coming Soon</h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              "I don't have any professional experience yet, but I'm eager to learn and grow in the field of web development. 
-              I'm actively looking for internship opportunities to apply my skills in real-world projects."
+              I don't have any professional experience yet, but I'm eager to learn and grow in the field of web development. 
+              I'm actively looking for internship opportunities to apply my skills in real-world projects.
             </p>
           </div>
           
@@ -499,8 +515,8 @@ I hope I can create something interesting and helpful for other people.`
             </span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold">Get In Touch</h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
-              "Want to chat? Feel free to reach out through any of the platforms below. 
-              I'll respond as soon as possible. Let's create something amazing together!"
+              Want to chat? Feel free to reach out through any of the platforms below. 
+              I'll respond as soon as possible. Let's create something amazing together!
             </p>
           </div>
 
